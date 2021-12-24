@@ -1,0 +1,46 @@
+class Vehicle:
+    def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+
+    def seating_capacity(self, capacity):
+        return f"The seating capacity of a {self.name} is {capacity} passengers"
+        
+        
+        inheritance
+        
+        class Vehicle:
+    def __init__(self, name, mileage, capacity):
+        self.name = name
+        self.max_speed = max_speed
+        self.number_of_wheels = number_of_wheels
+
+    def fare(self):
+        return self.capacity * 100
+
+class Bus(Vehicle):
+    pass
+
+School_bus = Bus("School Volvo", 12, 50)
+print("Total Bus fare is:", School_bus.fare())
+
+class Vehicle:
+    def __init__(self, name, maz_speed, number_of_wheels):
+        self.name = name
+        self.mileage = mileage
+        self.capacity = capacity
+    def qclass(self):
+        objclass=str(type(self))
+        method,clss=objclass.split(".")
+        objclassclean=clss.replace("'>",'')
+        print (objclassclean)
+                
+
+class Bus(Vehicle):
+    pass
+
+School_bus = Bus("School Volvo", 12, 50)
+Transit_bus = Vehicle("Tesla van", 12000, 2)
+
+Transit_bus.qclass()
